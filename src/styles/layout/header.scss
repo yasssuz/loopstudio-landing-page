@@ -10,6 +10,8 @@ html.navbar-active {
   align-items: center;
   justify-content: space-between;
   padding: 25px;
+  max-width: 1200px;
+  margin: auto;
 
   &__logo {
     z-index: 10;
