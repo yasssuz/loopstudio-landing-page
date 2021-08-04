@@ -1,0 +1,65 @@
+@use "../core/functions.scss" as *;
+@use "../core/colors.scss" as *;
+
+.about {
+  padding: 0 24px;
+  text-align: center;
+  position: relative;
+  max-width: 1200px;
+  margin: rem(95) auto 0;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+    margin-top: rem(160);
+  }
+
+  &__illustration {
+    width: 100%;
+    margin-bottom: rem(48);
+    max-width: 600px;
+
+    @media screen and (min-width: 768px) {
+      max-width: unset;
+      width: 730px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__text-area {
+    @media screen and (min-width: 768px) {
+      position: absolute;
+      background: $White;
+      padding: rem(95) 24px 0 95px;
+      bottom: 0;
+      right: 0;
+    }
+
+    h2 {
+      font-family: "Josefin Sans", sans-serif;
+      text-transform: uppercase;
+      font-size: rem(32);
+      font-weight: 300;
+      max-width: 15ch;
+      margin: 0 auto rem(23);
+
+      @media screen and (min-width: 768px) {
+        margin: 0 0 rem(23);
+        font-size: rem(45);
+        line-height: 110%;
+      }
+    }
+
+    p {
+      font-family: "Alata", sans-serif;
+      font-size: rem(17);
+      color: $DarkGray;
+      line-height: 175%;
+      max-width: 50ch;
+      margin: auto;
+
+      @media screen and (min-width: 768px) {
+        max-width: 45ch;
+      }
+    }
+  }
+}
