@@ -9,13 +9,21 @@ html.navbar-active {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 25px;
+  padding: rem(40) 25px 0;
   max-width: 1200px;
   margin: auto;
+
+  @media screen and (min-width: 768px) {
+    padding-top: rem(65);
+  }
 
   &__logo {
     z-index: 10;
     height: 27px;
+
+    @media screen and (min-width: 768px) {
+      height: 35px;
+    }
   }
 
   &__navigation {
@@ -48,6 +56,7 @@ html.navbar-active {
       width: unset;
       background: transparent;
       flex-direction: row;
+      padding: 0;
     }
 
     a {
