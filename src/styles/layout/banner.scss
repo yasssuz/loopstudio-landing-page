@@ -1,0 +1,53 @@
+@use '../core/functions.scss' as *;
+@use '../core/colors.scss' as *;
+
+.hero {
+  height: 650px;
+  background: url("../../assets/mobile/image-hero.jpg") no-repeat center;
+  background-size: cover;
+
+  @media screen and (min-width: 768px) {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+      url("../../assets/desktop/image-hero.jpg") no-repeat center;
+    background-size: cover;
+  }
+
+  .banner {
+    height: calc(100% - 4.1875rem);
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    max-width: 1200px;
+    margin: auto;
+
+    @media screen and (min-width: 768px) {
+      height: calc(100% - 6.25rem);
+    }
+
+    .banner__title-box {
+      border: 3px solid $White;
+      width: 100%;
+      padding: rem(25) 25px;
+
+      @media screen and (min-width: 768px) {
+        display: inline;
+        width: unset;
+      }
+
+      h1 {
+        max-width: 11ch;
+        font-size: clamp(2.4375rem, 8vw, 3.75rem);
+        text-transform: uppercase;
+        line-height: 120%;
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 300;
+        color: $White;
+
+        @media screen and (min-width: 768px) {
+          max-width: 14ch;
+          line-height: 110%;
+        }
+      }
+    }
+  }
+}
