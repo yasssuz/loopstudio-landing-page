@@ -41,6 +41,7 @@ html.navbar-active {
     top: 0;
     opacity: 0;
     visibility: hidden;
+    z-index: 9;
     transition: opacity 0.3s ease, visibility 0.3s ease;
 
     &.active {
