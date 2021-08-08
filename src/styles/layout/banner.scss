@@ -3,12 +3,12 @@
 
 .hero {
   height: 650px;
-  background: url("../../assets/mobile/image-hero.jpg") no-repeat center;
+  background: url("../assets/mobile/image-hero.jpg") no-repeat center;
   background-size: cover;
 
   @media screen and (min-width: 768px) {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
-      url("../../assets/desktop/image-hero.jpg") no-repeat center;
+      url("../assets/desktop/image-hero.jpg") no-repeat center;
     background-size: cover;
   }
 
