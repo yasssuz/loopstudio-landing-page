@@ -1,0 +1,296 @@
+@use "../core/functions.scss" as *;
+@use "../core/colors.scss" as *;
+
+.creations {
+  padding: 0 24px;
+  max-width: 1200px;
+  margin: rem(90) auto 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    margin-top: rem(180);
+    align-items: unset;
+  }
+
+  &__top-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+      justify-content: space-between;
+    }
+
+    h2 {
+      text-transform: uppercase;
+      font-family: "Josefin Sans", sans-serif;
+      font-weight: 300;
+      font-size: rem(32);
+
+      @media screen and (min-width: 768px) {
+        font-size: rem(38);
+      }
+
+      @media screen and (min-width: 990px) {
+        font-size: rem(42);
+      }
+    }
+
+    a {
+      display: none;
+      width: rem(158);
+      height: rem(40);
+      font-size: rem(14);
+      font-family: "Alata", sans-serif;
+      color: $Black;
+      border: 2px $Black solid;
+      text-decoration: none;
+      text-transform: uppercase;
+      place-content: center;
+      font-weight: bold;
+      letter-spacing: 4px;
+      transition: 0.3s ease all;
+
+      &:hover {
+        background: $Black;
+        color: $White;
+      }
+
+      @media screen and (min-width: 768px) {
+        display: grid;
+      }
+    }
+  }
+
+  &__list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: rem(25);
+    margin-top: rem(40);
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+      margin-top: rem(80);
+    }
+
+    @media screen and (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: rem(30);
+    }
+
+    @media screen and (min-width: 987px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    li:nth-of-type(1) {
+      background: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.1)
+        ),
+        url("../../assets/mobile/image-deep-earth.jpg") no-repeat center;
+      background-size: cover;
+
+      @media screen and (min-width: 768px) {
+        background: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.1)
+          ),
+          url("../../assets/desktop/image-deep-earth.jpg") no-repeat center;
+        background-size: cover;
+      }
+    }
+
+    li:nth-of-type(2) {
+      background: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.1)
+        ),
+        url("../../assets/mobile/image-night-arcade.jpg") no-repeat center;
+      background-size: cover;
+
+      @media screen and (min-width: 768px) {
+        background: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.1)
+          ),
+          url("../../assets/desktop/image-night-arcade.jpg") no-repeat center;
+        background-size: cover;
+      }
+    }
+
+    li:nth-of-type(3) {
+      background: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.1)
+        ),
+        url("../../assets/mobile/image-soccer-team.jpg") no-repeat center;
+      background-size: cover;
+
+      @media screen and (min-width: 768px) {
+        background: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.1)
+          ),
+          url("../../assets/desktop/image-soccer-team.jpg") no-repeat center;
+        background-size: cover;
+      }
+    }
+
+    li:nth-of-type(4) {
+      background: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.1)
+        ),
+        url("../../assets/mobile/image-grid.jpg") no-repeat center;
+      background-size: cover;
+
+      @media screen and (min-width: 768px) {
+        background: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.1)
+          ),
+          url("../../assets/desktop/image-grid.jpg") no-repeat center;
+        background-size: cover;
+      }
+    }
+
+    li:nth-of-type(5) {
+      background: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.1)
+        ),
+        url("../../assets/mobile/image-from-above.jpg") no-repeat center;
+      background-size: cover;
+
+      @media screen and (min-width: 768px) {
+        background: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.1)
+          ),
+          url("../../assets/desktop/image-from-above.jpg") no-repeat center;
+        background-size: cover;
+      }
+    }
+
+    li:nth-of-type(6) {
+      background: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.1)
+        ),
+        url("../../assets/mobile/image-pocket-borealis.jpg") no-repeat center;
+      background-size: cover;
+
+      @media screen and (min-width: 768px) {
+        background: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.1)
+          ),
+          url("../../assets/desktop/image-pocket-borealis.jpg") no-repeat center;
+        background-size: cover;
+      }
+    }
+
+    li:nth-of-type(7) {
+      background: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.1)
+        ),
+        url("../../assets/mobile/image-curiosity.jpg") no-repeat center;
+      background-size: cover;
+
+      @media screen and (min-width: 768px) {
+        background: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.1)
+          ),
+          url("../../assets/desktop/image-curiosity.jpg") no-repeat center;
+        background-size: cover;
+      }
+    }
+
+    li:nth-of-type(8) {
+      background: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.1)
+        ),
+        url("../../assets/mobile/image-fisheye.jpg") no-repeat center;
+      background-size: cover;
+
+      @media screen and (min-width: 768px) {
+        background: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.1)
+          ),
+          url("../../assets/desktop/image-fisheye.jpg") no-repeat center;
+        background-size: cover;
+      }
+    }
+  }
+
+  &__creation-item {
+    height: 120px;
+    width: 100%;
+    position: relative;
+
+    @media screen and (min-width: 768px) {
+      height: rem(450);
+    }
+
+    h3 {
+      margin: 0 0 20px 20px;
+      position: absolute;
+      bottom: 0;
+      z-index: 2;
+      color: $White;
+      font-family: "Josefin Sans", sans-serif;
+      text-transform: uppercase;
+      font-weight: 300;
+      font-size: rem(23);
+    }
+  }
+
+  &__bottom-link {
+    margin-top: rem(34);
+    width: rem(158);
+    height: rem(40);
+    font-size: rem(14);
+    font-family: "Alata", sans-serif;
+    color: $Black;
+    border: 2px $Black solid;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: grid;
+    place-content: center;
+    font-weight: bold;
+    letter-spacing: 4px;
+    transition: 0.3s ease all;
+
+    &:hover {
+      background: $Black;
+      color: $White;
+    }
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+}
