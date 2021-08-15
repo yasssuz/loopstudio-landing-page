@@ -1,0 +1,45 @@
+@use '../core/colors.scss' as *;
+@use '../core/functions.scss' as *;
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  background: $Black;
+  text-align: center;
+  padding: rem(50);
+  gap: rem(35);
+  margin-top: rem(95);
+
+  &__logo {
+    margin: auto;
+    height: 25px;
+  }
+
+  &__navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    a {
+      color: $White;
+      text-decoration: none;
+      font-size: rem(16);
+      font-family: "Alata", sans-serif;
+      letter-spacing: 1px;
+    }
+
+    a + a {
+      margin-top: rem(22);
+    }
+  }
+
+  &__icons {
+    img + img {
+      margin-left: rem(15);
+    }
+  }
+
+  &__copy {
+    color: #fff;
+  }
+}
