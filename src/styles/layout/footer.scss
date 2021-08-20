@@ -2,17 +2,31 @@
 @use '../core/functions.scss' as *;
 
 .footer {
-  display: grid;
-  grid-template-columns: 1fr;
   background: $Black;
-  text-align: center;
-  padding: rem(50);
-  gap: rem(35);
   margin-top: rem(95);
+
+  &__content {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: rem(50);
+    gap: rem(35);
+    margin: auto;
+
+    @media screen and (min-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
 
   &__logo {
     margin: auto;
     height: 25px;
+
+    @media screen and (min-width: 768px) {
+      margin: 0;
+      justify-self: start;
+    }
   }
 
   &__navbar {
@@ -20,26 +34,47 @@
     flex-direction: column;
     align-items: center;
 
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      grid-row: 2 /3;
+    }
+
     a {
       color: $White;
       text-decoration: none;
       font-size: rem(16);
       font-family: "Alata", sans-serif;
       letter-spacing: 1px;
+
+      @media screen and (min-width: 768px) {
+        font-size: rem(15);
+      }
     }
 
     a + a {
       margin-top: rem(22);
+
+      @media screen and (min-width: 768px) {
+        margin: 0 0 0 rem(33);
+      }
     }
   }
 
   &__icons {
+    @media screen and (min-width: 768px) {
+      justify-self: end;
+    }
+
     img + img {
       margin-left: rem(15);
     }
   }
 
   &__copy {
+    @media screen and (min-width: 768px) {
+      justify-self: end;
+    }
+
     color: #fff;
   }
 }
